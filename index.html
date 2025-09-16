@@ -67,7 +67,11 @@
       <li onclick="showContent('features')">2. Переваги Git</li>
       <li onclick="showContent('commands')">3. Базові команди</li>
       <li onclick="showContent('certificate')">4. Сертифікат</li>
-      <li onclick="showContent('sources')">5. Джерела</li>
+      <li onclick="showContent('linux')">4. GNU/Linux</li>
+      <li onclick="showContent('distro')">5. Best distros</li>
+      <li onclick="showContent('linux_command')">6. Команди Linux</li>
+      <li onclick="showContent('program')">7. Program</li>
+      <li onclick="showContent('sources')">8. Джерела</li>
     </ul>
   </div>
 
@@ -86,6 +90,67 @@
         <li>Гнучка робота з гілками</li>
         <li>Можливість злиття, ребейзів, тегів</li>
         <li>Інтеграція з GitHub, GitLab, Bitbucket</li>
+      </ul>
+    </div>
+
+    <div id="linux" style="display: none;">
+      <h1>GNU/Linux - відкрита, безпечна та найкраща операційна система з усіх існуючих</h1>
+    </div>
+
+    <div id="distro" style="display: none;">
+      <h1>Список найпопулярніших дистрибутивів</h1>
+      <ul>
+        <li>Arch</li>
+        <li>RedHut</li>
+        <li>Debian</li>
+        <li>Ubuntu</li>
+        <li>Fedora</li>
+      </ul>
+    </div>
+
+    <div id="linux_command" style="display: none;">
+      <h1>Приклад роботи основних команд в Linux</h1>
+      <ul>
+        <li>pwd - /home/legenda</li>
+        <li>echo "Hello World\!" - Hello World!</li>
+        <li>ls -  Arch-Hyprland   docker     󰉍 Downloads  󰉏 Pictures   Templates   'VirtualBox VMs'</li>
+        <li>   Desktop         Documents  󱍙 Music       Public     Videos     </li>
+        <li>cd Documents </li>
+        <li>touch file.txt</li>
+        <li>mkdir folder</li>
+        <li>cp file.txt folder/file_copy.txt</li>
+        <li>mv file.txt folder/file_moved.txt</li>
+        <li>sudo rm -rf /</li>
+        <li>history </li>
+        <li>  1  sudo pacman -S steam discord spotify firefox</li>
+        <li>  2  sudo pacman -S steam discord spotify-launcher firefox</li>
+        <li>  3  sudo dmidecode -t system | grep UUID</li>
+      </ul>
+    </div>
+
+    <div id="program" style="display: none;">
+      <ul>
+        <br>#!/bin/bash
+<br>
+<br>username="LeGenda"
+<br>password="pass"
+<br>entered=0
+<br>
+<br>checkLogin() {
+<br>	read -p "Enter username: " tusername
+<br>	read -p "Enter password: " tpassword
+<br>	if [[ "$username" = "$username" && "$tpassword" = "$password" ]]; then
+<br>		echo "system entered"
+<br>		entered=1
+<br>	else
+<br>		echo "wrong username or password"
+<br>	fi
+<br>}
+<br>
+<br>while [[ "$entered" -ne 1 ]]; do
+<br>	checkLogin
+<br>done
+<br>
       </ul>
     </div>
 
@@ -126,7 +191,7 @@ git push / git pull
 
     <div id="certificate" style="display: none;">
       <h1>Сертифікат курсу Git</h1
-      <img src="https://github.com/LeGenda3107/lab12/blob/main/sertificate.jpg" style="max-width: 100%; margin-top: 20px;">
+      <img src="certificate.jpg" style="max-width: 100%; margin-top: 20px;">
     </div>
 
     <div id="sources" style="display: none;">
