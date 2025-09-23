@@ -31,4 +31,4 @@ case $ch in
   4)res=`echo "scale=2; $a / $b" | bc`
   ;;
 esac
-cowsay -f tux "Result : $res"
+cowsay -f tux "Result : $res" | lolcat
